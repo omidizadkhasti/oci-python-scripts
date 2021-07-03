@@ -9,3 +9,8 @@ config_file=<path of oci config file in filesystem>
 is_instance_principals=false
 config_profile=<profile name in oci config file>
 ```
+
+if you want to use instance principal, use following parameters in DEFAULT section of property file:  
+```
+is_instance_principals=true
+```
