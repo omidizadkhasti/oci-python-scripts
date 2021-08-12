@@ -14,7 +14,37 @@ is_instance_principals=false
 config_profile=<profile name in oci config file>
 ```
 
-if you want to use instance principal, use following parameters in DEFAULT section of property file:  
+if you want to use instance principal, use following parameters in DEFAULT section of property file (valuse of other two parameters are not important):  
 ```
 is_instance_principals=true
+```
+if you have multiple OCI config profile in your machine, specified the profile name in config_profile parameter.
+
+for example if you have following configuration in OCI config file (under /home/opc/.oci/oci_config) and you want to use 'Test_Tenancy' configuration in your script, you should update proprty file as below.
+
+OCI Config file
+
+```
+[DEFAULT]
+user=ocid1.user.oc1.#####
+fingerprint=####
+key_file=<Key File Path>
+tenancy=ocid1.tenancy.oc1.####
+region=ap-melbourne-1
+pass_phrase=<Kety File Passphrase>
+[Test_Tenancy]
+user=ocid1.user.oc1.#####
+fingerprint=####
+key_file=<Key File Path>
+tenancy=ocid1.tenancy.oc1.####
+region=ap-sydney-1
+pass_phrase=<Kety File Passphrase>
+```
+
+Property file
+
+```
+config_file=/home/opc/.oci/oci_config
+is_instance_principals=false
+config_profile=Test_Tenancy
 ```
