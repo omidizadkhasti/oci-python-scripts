@@ -1,8 +1,8 @@
 # oci-python-scripts
 This repository includes python scripts to manage OCI resources using the OCI python SDK. 
 
-- Autoscaling script: 
-- SecurityList script: 
+- Autoscaling script: This script use for attach custom block volume (backup volume) to instances in autoscaling group.
+- SecurityList script: This script use OCI python SDK and add new Security List rule to existing subnet.
 
 Each script has a properties file that contains parameter for that script. some of parameters are common between all scripts (same as OCI configuration) and some of the are specific for each script that you can find more information about specific parameters in readme file for that script. 
 
