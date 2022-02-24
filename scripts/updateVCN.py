@@ -1,6 +1,6 @@
 import oci
 
-config = oci.config.from_file('~/.oci/config','COE')
+config = oci.config.from_file('~/.oci/config','<Config Profile>')
 
 core_client = oci.core.VirtualNetworkClient(config)
 
