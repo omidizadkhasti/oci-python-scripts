@@ -48,3 +48,15 @@ config_file=/home/opc/.oci/oci_config
 is_instance_principals=false
 config_profile=Test_Tenancy
 ```
+
+# Create pytyhon evirtual environment
+```
+python3 -m venv oci-script
+#Activate environment
+source oci-scripts/bin/activate
+#Deactivate environment
+deactivate
+python3 -m pip install oci
+
+
+```
