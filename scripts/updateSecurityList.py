@@ -1,4 +1,4 @@
-mport oci
+import oci
 
 config = oci.config.from_file('/etc/oci/config','eu-frankfurt-1')
 
